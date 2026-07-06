@@ -1,1 +1,2 @@
 # algchemistry-website
+Website initialized
