@@ -102,7 +102,7 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:54rem; text-align:center;
 }
-.kolm li{font-size:var(--tekst); line-height:1.4; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-size:var(--lause); line-height:1.4; text-wrap:balance; padding-inline:.5rem}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
 .kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--sans); font-size:var(--silt); font-weight:500; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
@@ -116,10 +116,10 @@ section{padding-block:var(--vahe)}
 .algus{font-size:var(--lause); line-height:1.3; max-width:24em; margin-inline:auto}
 .aeg{display:block}
 .kaardid{
-  max-width:66rem; margin-inline:auto;
+  max-width:68rem; margin-inline:auto;
   border-top:1px solid var(--kuld);
   padding-top:clamp(2rem, 4vw, 3rem);
-  display:grid; grid-template-columns:repeat(4, 1fr); gap:2.5rem 2rem;
+  display:grid; grid-template-columns:repeat(4, 1fr); gap:2.5rem 1rem;
   text-align:center;
 }
 .kaart .nimi{line-height:1.35}
@@ -132,7 +132,9 @@ section{padding-block:var(--vahe)}
 }
 .kaart a:hover{color:var(--sygav)}
 @media (max-width:56rem){ .kaardid{grid-template-columns:repeat(2, 1fr)} }
-.kaart img{width:100%; max-width:26rem; height:auto; margin-inline:auto}
+/* kaardi pilt 640 x 520: kuvatakse ala x 120-520, y 38-458, kus on kõigi nelja kaardi sisu; tühi taust jääb raamist välja */
+a.kaart{display:block; position:relative; overflow:hidden; width:80%; max-width:14.4rem; margin-inline:auto; aspect-ratio:400 / 420}
+.kaart img{position:absolute; width:160%; max-width:none; height:auto; left:-30%; top:-9.0476%}
 @media (max-width:34rem){ .kaardid{grid-template-columns:1fr; gap:2.75rem} }
 
 /* telefon: avalõigud ja sildid suuremaks, ülejäänu jääb arvuti mõõtu */
@@ -199,7 +201,7 @@ section{padding-block:var(--vahe)}
         <li>The remineralization<br>of your teeth</li>
       </ul>
       <div class="kesk">
-        <p>A mouth in balance works for the whole body, year after year.<br>Your mouth is a cornerstone for longevity.</p>
+        <p>A mouth in balance works for the whole body, year after year.<br>Your mouth is a cornerstone of longevity.</p>
       </div>
     </div>
   </section>
@@ -207,7 +209,7 @@ section{padding-block:var(--vahe)}
   <section id="toode" class="hele">
     <div class="raam">
       <div class="kesk">
-        <p class="algus">Oral care is the starting point.</p>
+        <p class="algus">Oral care is where we start.</p>
         <p>Our first line brings AM and PM toothpastes and a daily oral spray.</p>
         <span class="silt aeg">Available in mid-2027, United States.</span>
       </div>
@@ -217,10 +219,10 @@ section{padding-block:var(--vahe)}
   <section id="contact" class="hele">
     <div class="raam">
       <div class="kaardid">
-        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="1004" height="650"></a>
-        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; Partnerships" width="1004" height="650"></a>
-        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="1004" height="650"></a>
-        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="1004" height="650"></a>
+        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; Partnerships" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="640" height="520"></a>
       </div>
     </div>
   </section>
