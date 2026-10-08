@@ -1,98 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AlgChemistry — 100 & Above</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlgChemistry</title>
+<meta name="description" content="Science for Human Longevity. Your health depends on the balance between your cells and the bacteria within you. We work with that balance.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://algchemistry.com/">
+<meta property="og:title" content="AlgChemistry">
+<meta property="og:description" content="Science for Human Longevity. Your health depends on the balance between your cells and the bacteria within you. We work with that balance.">
+<meta property="og:image" content="https://algchemistry.com/images/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AlgChemistry coat of arms with the tagline Science for Human Longevity">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="images/icon.png">
+<style>
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+:root{
+  --paber:#FEFDF9;           /* paber: tekst tumedal pinnal */
+  --sygav:#0B1B3D;           /* tekst ja tume pind */
+  --kesk:#42659E;            /* sildid ja lingid */
+  --hele:#E1EBF5;            /* hele pind */
+  --kuld:#E6B269;            /* ornament ja peenjooned */
 
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-    }
+  --serif:'EB Garamond', Georgia, serif;
+  --sans:'Archivo', system-ui, sans-serif;
+  /* kirjaredel: väide 22 · tekst 18 · silt 13 px, telefonis 18 · 15 · 12 px */
+  --tekst:1.125rem;  --rida:1.6;
+  --lause:1.375rem;
+  --silt:0.8125rem;
+  --vahe:clamp(3rem, 5vw, 4.5rem);
+}
 
-    body {
-      background: #ffffff;
-      color: #17324d;
-      font-family: Avenir, "Avenir Next", Arial, sans-serif;
-    }
+*{box-sizing:border-box}
+html{background:var(--sygav)}
+body{
+  margin:0;
+  background:var(--paber);
+  color:var(--sygav);
+  font-family:var(--serif);
+  font-size:var(--tekst);
+  line-height:var(--rida);
+  font-variant-numeric:oldstyle-nums;
+  text-rendering:optimizeLegibility;
+}
+::selection{background:#D6E8F8; color:var(--sygav)}
+img{display:block; max-width:100%}
+p{margin:0; text-wrap:pretty}
+a{color:inherit}
 
-    main {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-      text-align: center;
-    }
+.raam{max-width:76rem; margin:0 auto; padding-inline:clamp(1rem, 5vw, 4rem)}
+.kesk{max-width:36em; margin-inline:auto; text-align:center}
+.kesk p, .lause{text-wrap:balance}
+/* rütm: iga teksti-vahe on kordaja kirjasuurusest, nii et vahed liiguvad kirjaga kaasa */
+.kesk p + p{margin-top:var(--tekst)}
+.kesk p + .silt{margin-top:calc(var(--tekst) * 1.8)}
 
-    .content {
-      transform: translateY(-2vh);
-    }
+.silt{
+  font-family:var(--sans);
+  font-size:var(--silt);
+  line-height:1.15;
+  font-weight:500;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--kesk);
+  font-variant-numeric:lining-nums;
+}
+.sygav .silt{color:var(--kuld); white-space:nowrap}
+#fookus .raam > .kesk:first-child{max-width:none}
+@media (max-width:58rem){ .sygav .silt{white-space:normal} }
 
-    h1 {
-      margin: 0;
-      font-size: clamp(42px, 5vw, 72px);
-      font-weight: 700;
-      letter-spacing: -1.5px;
-    }
+/* ornament: logo enda jaotaja, joon ja teemant */
+.orn{display:block; width:9rem; height:.75rem; margin-inline:auto; color:var(--kuld); overflow:visible}
 
-    .tagline {
-      margin-top: 10px;
-      font-family: "DM Sans", Avenir, Arial, sans-serif;
-      font-size: clamp(18px, 1.8vw, 25px);
-      font-style: italic;
-      letter-spacing: 0.04em;
-    }
+/* päis: logo keskel, tumedal pinnal; kõrgus on konstant igal ekraanil — 35rem (560 px) */
+header{background:var(--sygav); color:var(--paber)}
+.avang{text-align:center; padding-top:5.5rem; padding-bottom:3.5rem}
+.avang img{height:26rem; width:auto; margin-inline:auto}
 
-    .coming-soon {
-      margin-top: 72px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-    }
+/* pinnad: tume · hele · tume · hele · tume */
+section{padding-block:var(--vahe)}
+.paber{background:var(--paber)}
+.hele{background:var(--hele)}
+.sygav{background:var(--sygav); color:var(--paber)}
 
-    .contact {
-      margin-top: 60px;
-      font-size: 13px;
-      line-height: 1.8;
-    }
+/* plokk 1 ja 2: üks tervik heledal pinnal; kaks avalauset koos, ornament nende järel */
+#keha{padding-bottom:0}
+#keha .orn{margin-top:2.5rem}
+.lause{font-size:var(--lause); line-height:1.3; max-width:24em; margin-inline:auto}
+.kesk .lause + .lause{margin-top:calc(var(--tekst) * 1.3)}
+#suu{padding-top:2.5rem}
 
-    .contact-label {
-      font-weight: 600;
-      margin-bottom: 4px;
-    }
+/* plokk 3: kolm asja kõrvuti, rooma numbrid kullas */
+.kolm{
+  list-style:none; margin:2.5rem auto; padding:0;
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
+  max-width:54rem; text-align:center;
+}
+.kolm li{font-size:var(--tekst); line-height:1.4; text-wrap:balance; padding-inline:.5rem}
+.kolm{counter-reset:asi}
+.kolm li{counter-increment:asi}
+.kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--sans); font-size:var(--silt); font-weight:500; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
+@media (max-width:40rem){
+  .kolm{grid-template-columns:1fr; gap:2rem}
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+/* plokk 4 ja 5: üks hele pind */
+#toode{padding-bottom:calc(var(--vahe) * .5)}
+#contact{padding-top:calc(var(--vahe) * .75)}
+.algus{font-size:var(--lause); line-height:1.3; max-width:24em; margin-inline:auto}
+.aeg{display:block}
+.kaardid{
+  max-width:66rem; margin-inline:auto;
+  border-top:1px solid var(--kuld);
+  padding-top:clamp(2rem, 4vw, 3rem);
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem 2rem;
+  text-align:center;
+}
+.kaart .nimi{line-height:1.35}
+.kaart .roll{display:block; margin-top:calc(var(--tekst) * .78)}
+.kaart a{
+  display:inline-block; margin-top:calc(var(--tekst) * .95);
+  font-family:var(--sans); font-size:var(--silt); letter-spacing:.02em;
+  color:var(--kesk); text-decoration:underline;
+  text-decoration-color:var(--kuld); text-decoration-thickness:1px; text-underline-offset:.25em;
+}
+.kaart a:hover{color:var(--sygav)}
+@media (max-width:56rem){ .kaardid{grid-template-columns:1fr} }
+.kaart img{width:100%; max-width:26rem; height:auto; margin-inline:auto}
+@media (max-width:34rem){ .kaardid{grid-template-columns:1fr; gap:2.75rem} }
 
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+/* telefon: avalõigud ja sildid suuremaks, ülejäänu jääb arvuti mõõtu */
+@media (max-width:40rem){
+  :root{--silt:0.875rem}
+  #suu{--tekst:1.25rem}
+  #suu .kesk p{font-size:var(--tekst)}
+}
+
+/* plokk 6: vapp üksi */
+.vapp{text-align:center; padding-block:calc(var(--vahe) + (.75rem + var(--tekst) * 1.3) / 2 + (var(--silt) - .6875rem) * 1.15 / 2)}
+.vapp img{width:clamp(7rem, 15vw, 9.5rem); height:auto; margin-inline:auto}
+.autor{margin-top:2.5rem; letter-spacing:.2em}
+.vapp .autor{margin-top:1rem; color:var(--hele); font-size:.6875rem}
+</style>
 </head>
-
 <body>
-  <main>
-    <div class="content">
-      <h1>AlgChemistry</h1>
-      <div class="tagline">100 &amp; Above</div>
 
-      <div class="coming-soon">Coming Soon</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="orn" viewBox="0 0 144 12" preserveAspectRatio="xMidYMid meet">
+    <line x1="0" y1="6" x2="60" y2="6" stroke="currentColor" stroke-width="1"/>
+    <path d="M72 1.5 L76.5 6 L72 10.5 L67.5 6 Z" fill="currentColor"/>
+    <line x1="84" y1="6" x2="144" y2="6" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+</svg>
 
-      <div class="contact">
-        <div class="contact-label">Contact</div>
-        <a href="mailto:info@algchemistry.com">info@algchemistry.com</a>
+<header>
+  <div class="avang">
+    <div class="raam">
+      <img src="images/logo.webp" alt="AlgChemistry" width="587" height="813">
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="keha" class="hele">
+    <div class="raam">
+      <div class="kesk">
+        <p class="lause">Your health depends on the balance between your cells and the bacteria that live within you.</p>
+        <p class="lause">We work with that balance. For a longer, better, and happier life.</p>
+      </div>
+      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+    </div>
+  </section>
+
+  <section id="suu" class="hele">
+    <div class="raam">
+      <div class="kesk">
+        <p>Your mouth holds a living community of its own, and you visit it twice a day. That makes it the best place to begin.</p>
+        <p>In 2026, researchers found a way to estimate your biological age from the microbiome in your mouth. What it shows changes, as you do.</p>
       </div>
     </div>
-  </main>
+  </section>
+
+  <section id="fookus" class="sygav">
+    <div class="raam">
+      <div class="kesk">
+        <span class="silt">In oral care we focus on three main things that influence each other:</span>
+      </div>
+      <ul class="kolm">
+        <li>The microbiome<br>of your mouth</li>
+        <li>The pH<br>it lives in</li>
+        <li>The remineralization<br>of your teeth</li>
+      </ul>
+      <div class="kesk">
+        <p>A mouth in balance works for the whole body, year after year.<br>Your mouth is a cornerstone for longevity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="toode" class="hele">
+    <div class="raam">
+      <div class="kesk">
+        <p class="algus">Oral care is the starting point.</p>
+        <p>Our first line brings AM and PM toothpastes and a daily oral spray.</p>
+        <span class="silt aeg">Available in mid-2027, United States.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="hele">
+    <div class="raam">
+      <div class="kaardid">
+        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="1004" height="650"></a>
+        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="1004" height="650"></a>
+        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="1004" height="650"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="vapp" class="sygav vapp">
+    <div class="raam">
+      <img src="images/vapp.webp" alt="AlgChemistry coat of arms" width="535" height="646">
+      <p class="silt autor">&copy; 2026 AlgChemistry</p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+/* e-posti aadress pannakse kokku alles klõpsu hetkel: lehe koodis aadressi ei ole */
+function aadress(u){return u.split('').reverse().join('')+'\u0040'+'algchemistry'+'.'+'com'}
+document.querySelectorAll('[data-u]').forEach(function(a){
+  a.addEventListener('click',function(e){e.preventDefault(); location.href='mai'+'lto:'+aadress(a.dataset.u)});
+});
+</script>
 </body>
 </html>
