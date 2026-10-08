@@ -82,6 +82,8 @@ a{color:inherit}
 header{background:var(--sygav); color:var(--paber)}
 .avang{text-align:center; padding-top:5.5rem; padding-bottom:3.5rem}
 .avang img{height:26rem; width:auto; margin-inline:auto}
+/* telefonis ja tahvlis on logo 10 % väiksem (26 -> 23,4 rem); vabanenud 2,6 rem läheb pooleks üles ja alla, päis jääb 35 rem kõrguseks */
+@media (max-width:56rem){ .avang{padding-top:6.8rem; padding-bottom:4.8rem} .avang img{height:23.4rem} }
 
 /* pinnad: tume · hele · tume · hele · tume */
 section{padding-block:var(--vahe)}
@@ -102,11 +104,12 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:54rem; text-align:center;
 }
-.kolm li{font-size:var(--lause); line-height:1.4; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
+.kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
 .kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--sans); font-size:var(--silt); font-weight:500; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
-@media (max-width:40rem){
+@media (max-width:56rem){
   .kolm{grid-template-columns:1fr; gap:2rem}
 }
 
@@ -147,6 +150,8 @@ a.kaart{display:block; position:relative; overflow:hidden; width:80%; max-width:
 /* plokk 6: vapp üksi */
 .vapp{text-align:center; padding-block:calc(var(--vahe) + (.75rem + var(--tekst) * 1.3) / 2 + (var(--silt) - .6875rem) * 1.15 / 2)}
 .vapp img{width:clamp(7rem, 15vw, 9.5rem); height:auto; margin-inline:auto}
+/* telefonis ja tahvlis on alumine vapp 30 % suurem kui vapp kontaktide kaardil (kaardi vapp 113 px, see 147 px) */
+@media (max-width:56rem){ .vapp img{width:9.5rem} }
 .autor{margin-top:2.5rem; letter-spacing:.2em}
 .vapp .autor{margin-top:1rem; color:var(--hele); font-size:.6875rem}
 </style>
@@ -197,7 +202,7 @@ a.kaart{display:block; position:relative; overflow:hidden; width:80%; max-width:
       </div>
       <ul class="kolm">
         <li>The microbiome<br>of your mouth</li>
-        <li>The pH<br>it lives in</li>
+        <li>The <span class="ph">pH</span><br>it lives in</li>
         <li>The remineralization<br>of your teeth</li>
       </ul>
       <div class="kesk">
