@@ -119,7 +119,7 @@ section{padding-block:var(--vahe)}
   max-width:66rem; margin-inline:auto;
   border-top:1px solid var(--kuld);
   padding-top:clamp(2rem, 4vw, 3rem);
-  display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem 2rem;
+  display:grid; grid-template-columns:repeat(4, 1fr); gap:2.5rem 2rem;
   text-align:center;
 }
 .kaart .nimi{line-height:1.35}
@@ -131,7 +131,7 @@ section{padding-block:var(--vahe)}
   text-decoration-color:var(--kuld); text-decoration-thickness:1px; text-underline-offset:.25em;
 }
 .kaart a:hover{color:var(--sygav)}
-@media (max-width:56rem){ .kaardid{grid-template-columns:1fr} }
+@media (max-width:56rem){ .kaardid{grid-template-columns:repeat(2, 1fr)} }
 .kaart img{width:100%; max-width:26rem; height:auto; margin-inline:auto}
 @media (max-width:34rem){ .kaardid{grid-template-columns:1fr; gap:2.75rem} }
 
@@ -218,6 +218,7 @@ section{padding-block:var(--vahe)}
     <div class="raam">
       <div class="kaardid">
         <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="1004" height="650"></a>
+        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; Partnerships" width="1004" height="650"></a>
         <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="1004" height="650"></a>
         <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="1004" height="650"></a>
       </div>
