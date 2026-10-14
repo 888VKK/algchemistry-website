@@ -16,20 +16,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="images/icon.png">
 <style>
-@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/eb-garamond-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cinzel-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cinzel-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cinzel-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cinzel-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/cormorant-garamond-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
-@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300;font-display:swap;src:url(fonts/cormorant-garamond-300-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
-@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300;font-display:swap;src:url(fonts/cormorant-garamond-300-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cormorant-garamond-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cormorant-garamond-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 
@@ -41,7 +31,6 @@
   --kuld:#E6B269;            /* ornament ja peenjooned */
 
   --serif:'Cormorant Garamond', Georgia, serif;
-  --sans:'Archivo', system-ui, sans-serif;
   --logo:'Cinzel', Georgia, serif;   /* logo kiri: sildid, kolm fookust koos rooma numbritega, autoririda */
   /* kirjaredel: väide 22 · tekst 20 · silt 16 px */
   --tekst:1.25rem;  --rida:1.575rem;   /* reavahe 25,2 px kogu tekstil, sama mis fookustel 18 px × 1,4 */
@@ -141,15 +130,6 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(4, 1fr); gap:2.5rem 1rem;
   text-align:center;
 }
-.kaart .nimi{line-height:1.35}
-.kaart .roll{display:block; margin-top:calc(var(--tekst) * .78)}
-.kaart a{
-  display:inline-block; margin-top:calc(var(--tekst) * .95);
-  font-family:var(--sans); font-size:var(--silt); letter-spacing:.02em;
-  color:var(--kesk); text-decoration:underline;
-  text-decoration-color:var(--kuld); text-decoration-thickness:1px; text-underline-offset:.25em;
-}
-.kaart a:hover{color:var(--sygav)}
 @media (max-width:56rem){ .kaardid{grid-template-columns:repeat(2, 1fr)} }
 /* kaardi pilt 640 x 520: kuvatakse ala x 65-575, y 38-458, kus on kõigi nelja kaardi sisu; tühi taust jääb raamist välja. Kaart täidab veeru; nimi on arvutis umbes 20 px */
 a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width:18rem; margin-inline:auto; aspect-ratio:510 / 420}
@@ -234,10 +214,10 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
   <section id="contact" class="hele">
     <div class="raam">
       <div class="kaardid">
-        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; Partnerships" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team leadership" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; partnerships" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; product lead" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, lead scientist" width="640" height="520"></a>
       </div>
     </div>
   </section>
