@@ -40,7 +40,7 @@
   --sans:'Archivo', system-ui, sans-serif;
   --logo:'Cinzel', Georgia, serif;   /* logo kiri: sildid, kolm fookust koos rooma numbritega, autoririda */
   /* kirjaredel: väide 22 · tekst 20 · silt 16 px */
-  --tekst:1.25rem;  --rida:1.6;
+  --tekst:1.25rem;  --rida:1.575rem;   /* reavahe 25,2 px kogu tekstil, sama mis fookustel 18 px × 1,4 */
   --lause:1.375rem;
   --silt:1rem;
   --vahe:clamp(3rem, 5vw, 4.5rem);
@@ -105,7 +105,7 @@ section{padding-block:var(--vahe)}
 /* plokk 1 ja 2: üks tervik heledal pinnal; kaks avalauset koos, ornament nende järel */
 #keha{padding-bottom:0}
 #keha .orn{margin-top:2.5rem}
-.lause{font-size:var(--lause); line-height:1.3; max-width:24em; margin-inline:auto}
+.lause{font-size:var(--lause); line-height:var(--rida); max-width:24em; margin-inline:auto}
 .kesk .lause + .lause{margin-top:calc(var(--tekst) * 1.3)}
 #suu{padding-top:2.5rem}
 
@@ -115,7 +115,7 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:58rem; text-align:center;
 }
-.kolm li{font-family:var(--logo); font-size:1.125rem; line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-family:var(--logo); font-size:1.125rem; line-height:var(--rida); text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
@@ -127,10 +127,9 @@ section{padding-block:var(--vahe)}
 
 /* plokk 4 ja 5: üks hele pind */
 #toode{padding-bottom:calc(var(--vahe) * .5)}
-#toode p{line-height:1.3}
 #contact{padding-top:calc(var(--vahe) * .75)}
-.algus{font-size:var(--lause); line-height:1.3; max-width:24em; margin-inline:auto}
-.aeg{display:block; color:var(--sygav); line-height:1.6}
+.algus{font-size:var(--lause); line-height:var(--rida); max-width:24em; margin-inline:auto}
+.aeg{display:block; color:var(--sygav); line-height:var(--rida)}
 .riik{white-space:nowrap}
 .kaardid{
   max-width:68rem; margin-inline:auto;
