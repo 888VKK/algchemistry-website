@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="582" height="35" viewBox="-291 -17.5 582 35">
+ <title>AlgChemistry vahejoon</title>
+ <defs>
+  <linearGradient id="kuld4" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#FAEE9D"/><stop offset=".35" stop-color="#E6B04A"/><stop offset=".6" stop-color="#DB951A"/><stop offset="1" stop-color="#AB5601"/>
+  </linearGradient>
+ </defs>
+   <path d="M-290 0 L-23.78 -3.5 L-20.28 0 L-23.78 3.5 Z" fill="url(#kuld4)"/>
+   <path d="M290 0 L23.78 -3.5 L20.28 0 L23.78 3.5 Z" fill="url(#kuld4)"/>
+   <g transform="scale(1.02)">
+   <g fill="#F8E3A0">
+    <path d="M-0.75 0 L0 -9 L0.75 0 Z" transform="rotate(45)"/>
+    <path d="M-0.75 0 L0 -9 L0.75 0 Z" transform="rotate(135)"/>
+    <path d="M-0.75 0 L0 -9 L0.75 0 Z" transform="rotate(225)"/>
+    <path d="M-0.75 0 L0 -9 L0.75 0 Z" transform="rotate(315)"/>
+   </g>
+   <g>
+    <path d="M0 0 L-14 0 Q-8 -1 -4.5 -4.5 Z" fill="#FFF0B5"/>
+    <path d="M0 0 L14 0 Q8 -1 4.5 -4.5 Z" fill="#FFF0B5"/>
+    <path d="M0 0 L0 -14 Q-1 -8 -4.5 -4.5 Z" fill="#F3CF74"/>
+    <path d="M0 0 L0 -14 Q1 -8 4.5 -4.5 Z" fill="#F3CF74"/>
+    <path d="M0 0 L-14 0 Q-8 1 -4.5 4.5 Z" fill="#C98415"/>
+    <path d="M0 0 L14 0 Q8 1 4.5 4.5 Z" fill="#C98415"/>
+    <path d="M0 0 L0 14 Q-1 8 -4.5 4.5 Z" fill="#A85F05"/>
+    <path d="M0 0 L0 14 Q1 8 4.5 4.5 Z" fill="#A85F05"/>
+   </g>
+   <g stroke="#FFF7D6" stroke-width=".4" stroke-linecap="round"><line x1="0" y1="0" x2="0" y2="-13.4" opacity=".95"/><line x1="0" y1="0" x2="-13.4" y2="0" opacity=".8"/><line x1="0" y1="0" x2="13.4" y2="0" opacity=".8"/><line x1="0" y1="0" x2="0" y2="13.4" opacity=".35"/></g>
+  </g>
+</svg>
