@@ -39,10 +39,10 @@
   --serif:'Cormorant Garamond', Georgia, serif;
   --sans:'Archivo', system-ui, sans-serif;
   --logo:'Cinzel', Georgia, serif;   /* logo kiri: sildid, kolm fookust koos rooma numbritega, autoririda */
-  /* kirjaredel: väide 22 · tekst 20 · silt 14 px */
+  /* kirjaredel: väide 22 · tekst 20 · silt 16 px */
   --tekst:1.25rem;  --rida:1.6;
   --lause:1.375rem;
-  --silt:0.875rem;
+  --silt:1rem;
   --vahe:clamp(3rem, 5vw, 4.5rem);
 }
 
@@ -82,11 +82,9 @@ a{color:inherit}
   font-variant-numeric:lining-nums;
 }
 .sygav .silt{color:var(--kuld); white-space:nowrap}
-/* paksus Cinzelis: kõik Cinzeli osad */
-#fookus .silt, .aeg, .autor{font-weight:700}
-#fookus .raam > .kesk:first-child{max-width:none}
+#fookus .raam > .kesk:first-child{max-width:none; text-wrap:balance}
 #fookus .kesk p{font-weight:400}
-@media (max-width:58rem){ .sygav .silt{white-space:normal} }
+@media (max-width:60rem){ .sygav .silt{white-space:normal} }
 
 /* ornament: logo enda jaotaja, joon ja teemant */
 .orn{display:block; width:9rem; height:.75rem; margin-inline:auto; color:var(--kuld); overflow:visible}
@@ -121,7 +119,7 @@ section{padding-block:var(--vahe)}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
-.kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:700; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
+.kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:400; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
 /* 20 px kirjas vajab „The remineralization“ 246 px; kolm veergu mahuvad alates 62 rem laiusest */
 @media (max-width:62rem){
   .kolm{grid-template-columns:1fr; gap:2rem}
