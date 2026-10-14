@@ -78,8 +78,8 @@ a{color:inherit}
 #fookus .raam > .kesk:first-child{max-width:none; text-wrap:balance}
 @media (max-width:60rem){ .sygav .silt{white-space:normal} }
 
-/* ornament: logo vahejoon samas kujus ja suuruses nagu päise logol — jämenevad teravikuga jooned ja nelja haruga täht */
-.orn{display:block; width:18.2rem; max-width:100%; height:.5645rem; margin-inline:auto; color:var(--kuld); overflow:visible}
+/* ornament: logo uus vahejoon (joon.jpg), sama laiusega kui päise logos; valge taust kaob segurežiimiga multiply */
+.orn{display:block; width:18.53rem; max-width:100%; height:auto; margin-inline:auto; mix-blend-mode:multiply}
 
 /* päis: logo keskel, tumedal pinnal; kõrgus on konstant igal ekraanil — 35rem (560 px) */
 header{background:var(--sygav); color:var(--paber)}
@@ -148,18 +148,10 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="orn" viewBox="-290 -9 580 18" preserveAspectRatio="xMidYMid meet">
-    <path d="M-290 0 L-17 -3.5 L-13.5 0 L-17 3.5 Z" fill="currentColor"/>
-    <path d="M0 -8.5 Q1.2 -1.2 8.5 0 Q1.2 1.2 0 8.5 Q-1.2 1.2 -8.5 0 Q-1.2 -1.2 0 -8.5 Z" fill="currentColor"/>
-    <path d="M290 0 L17 -3.5 L13.5 0 L17 3.5 Z" fill="currentColor"/>
-  </symbol>
-</svg>
-
 <header>
   <div class="avang">
     <div class="raam">
-      <img src="images/logo.webp" alt="AlgChemistry" width="602" height="825">
+      <img src="images/logo.webp" alt="AlgChemistry" width="636" height="833">
     </div>
   </div>
 </header>
@@ -172,7 +164,7 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
         <p class="lause">Your health depends on the balance between your cells and the bacteria that live within you.</p>
         <p class="lause">We work with that balance.<br>For a longer, better, and happier life.</p>
       </div>
-      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <img class="orn" src="images/joon.webp" alt="" width="297" height="15">
     </div>
   </section>
 
@@ -214,10 +206,10 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
   <section id="contact" class="hele">
     <div class="raam">
       <div class="kaardid">
-        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team leadership" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; partnerships" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; product lead" width="640" height="520"></a>
-        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, lead scientist" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="ovrat" aria-label="Email Tarvo Nurmeots"><img src="images/tarvo.png" alt="Tarvo Nurmeots, Team Leadership" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="ruhav" aria-label="Email Vahur Kivisikk"><img src="images/vahur.png" alt="Vahur Kivisikk, PR &amp; Partnerships" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="imed" aria-label="Email Demi Vaarask"><img src="images/demi.png" alt="Demi Vaarask, Project &amp; Product Lead" width="640" height="520"></a>
+        <a class="kaart" href="#contact" data-u="anilorak" aria-label="Email Karolina Nõu"><img src="images/karolina.png" alt="Karolina Nõu, R&amp;D, Lead Scientist" width="640" height="520"></a>
       </div>
     </div>
   </section>
