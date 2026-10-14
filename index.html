@@ -115,12 +115,12 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:58rem; text-align:center;
 }
-.kolm li{font-family:var(--logo); font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-family:var(--logo); font-size:1.125rem; line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
 .kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:400; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
-/* 20 px kirjas vajab „The remineralization“ 246 px; kolm veergu mahuvad alates 62 rem laiusest */
+/* fookused 18 px; kolm veergu alates 62 rem laiusest */
 @media (max-width:62rem){
   .kolm{grid-template-columns:1fr; gap:2rem}
 }
