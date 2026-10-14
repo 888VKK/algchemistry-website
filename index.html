@@ -85,7 +85,9 @@ a{color:inherit}
 }
 .sygav .silt{color:var(--kuld); white-space:nowrap}
 #fookus .raam > .kesk:first-child{max-width:none; text-wrap:balance}
-@media (max-width:60rem){ .sygav .silt{white-space:normal} }
+#fookus .silt{font-size:var(--tekst)}
+/* 20 px silt on umbes 1065 px lai: ühel real alates 75 rem laiusest */
+@media (max-width:75rem){ .sygav .silt{white-space:normal} }
 
 /* ornament: logo enda jaotaja, joon ja teemant */
 .orn{display:block; width:9rem; height:.75rem; margin-inline:auto; color:var(--kuld); overflow:visible}
@@ -130,7 +132,7 @@ section{padding-block:var(--vahe)}
 #toode{padding-bottom:calc(var(--vahe) * .5)}
 #contact{padding-top:calc(var(--vahe) * .75)}
 .algus{font-size:var(--lause); line-height:var(--rida); max-width:24em; margin-inline:auto}
-.aeg{display:block; color:var(--sygav); line-height:var(--rida); font-size:1.125rem}
+.aeg{display:block; color:var(--sygav); line-height:var(--rida); font-size:var(--tekst)}
 .riik{white-space:nowrap}
 .kaardid{
   max-width:68rem; margin-inline:auto;
