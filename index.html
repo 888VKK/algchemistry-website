@@ -22,6 +22,8 @@
 @font-face{font-family:'Archivo';font-style:normal;font-weight:500;font-display:swap;src:url(fonts/archivo-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cinzel-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 @font-face{font-family:'Cinzel';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/cinzel-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Cinzel';font-style:normal;font-weight:700;font-display:swap;src:url(fonts/cinzel-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
 
 :root{
   --paber:#FEFDF9;           /* paber: tekst tumedal pinnal */
@@ -75,6 +77,8 @@ a{color:inherit}
   font-variant-numeric:lining-nums;
 }
 .sygav .silt{color:var(--kuld); white-space:nowrap}
+/* paksus Cinzelis: fookuse silt, rooma numbrid ja saadavuse rida; autoririda jääb tavakirja */
+#fookus .silt, .aeg{font-weight:700}
 #fookus .raam > .kesk:first-child{max-width:none}
 @media (max-width:58rem){ .sygav .silt{white-space:normal} }
 
@@ -111,7 +115,7 @@ section{padding-block:var(--vahe)}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
-.kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:400; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
+.kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:700; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
 @media (max-width:56rem){
   .kolm{grid-template-columns:1fr; gap:2rem}
 }
