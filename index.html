@@ -77,8 +77,8 @@ a{color:inherit}
   font-variant-numeric:lining-nums;
 }
 .sygav .silt{color:var(--kuld); white-space:nowrap}
-/* paksus Cinzelis: fookuse silt, rooma numbrid ja saadavuse rida; autoririda jääb tavakirja */
-#fookus .silt, .aeg{font-weight:700}
+/* paksus Cinzelis: kõik Cinzeli osad */
+#fookus .silt, .aeg, .autor{font-weight:700}
 #fookus .raam > .kesk:first-child{max-width:none}
 @media (max-width:58rem){ .sygav .silt{white-space:normal} }
 
@@ -111,13 +111,13 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:58rem; text-align:center;
 }
-.kolm li{font-family:var(--logo); font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-family:var(--logo); font-weight:700; font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
 .kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:700; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
-/* 20 px kirjas vajab „The remineralization“ 246 px; kolm veergu mahuvad alates 62 rem laiusest */
-@media (max-width:62rem){
+/* 20 px paksus kirjas vajab „The remineralization“ 262 px; kolm veergu mahuvad alates 66 rem laiusest */
+@media (max-width:66rem){
   .kolm{grid-template-columns:1fr; gap:2rem}
 }
 
