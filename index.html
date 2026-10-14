@@ -78,8 +78,8 @@ a{color:inherit}
 #fookus .raam > .kesk:first-child{max-width:none; text-wrap:balance}
 @media (max-width:60rem){ .sygav .silt{white-space:normal} }
 
-/* ornament: logo vahejoon samas kujus ja suuruses nagu päise logol — jämenevad teravikuga jooned ja nelja haruga täht */
-.orn{display:block; width:18.2rem; max-width:100%; height:.5645rem; margin-inline:auto; color:var(--kuld); overflow:visible}
+/* ornament: logo uus vahejoon (joon.jpg), sama laiusega kui päise logos; valge taust kaob segurežiimiga multiply */
+.orn{display:block; width:18.53rem; max-width:100%; height:auto; margin-inline:auto; mix-blend-mode:multiply}
 
 /* päis: logo keskel, tumedal pinnal; kõrgus on konstant igal ekraanil — 35rem (560 px) */
 header{background:var(--sygav); color:var(--paber)}
@@ -148,14 +148,6 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="orn" viewBox="-290 -9 580 18" preserveAspectRatio="xMidYMid meet">
-    <path d="M-290 0 L-17 -3.5 L-13.5 0 L-17 3.5 Z" fill="currentColor"/>
-    <path d="M0 -8.5 Q1.2 -1.2 8.5 0 Q1.2 1.2 0 8.5 Q-1.2 1.2 -8.5 0 Q-1.2 -1.2 0 -8.5 Z" fill="currentColor"/>
-    <path d="M290 0 L17 -3.5 L13.5 0 L17 3.5 Z" fill="currentColor"/>
-  </symbol>
-</svg>
-
 <header>
   <div class="avang">
     <div class="raam">
@@ -172,7 +164,7 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
         <p class="lause">Your health depends on the balance between your cells and the bacteria that live within you.</p>
         <p class="lause">We work with that balance.<br>For a longer, better, and happier life.</p>
       </div>
-      <svg class="orn" aria-hidden="true"><use href="#orn"/></svg>
+      <img class="orn" src="images/joon.webp" alt="" width="297" height="15">
     </div>
   </section>
 
