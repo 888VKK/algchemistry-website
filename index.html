@@ -32,7 +32,7 @@
 
   --serif:'EB Garamond', Georgia, serif;
   --sans:'Archivo', system-ui, sans-serif;
-  --logo:'Cinzel', Georgia, serif;   /* logo kiri: sildid, rooma numbrid, autoririda */
+  --logo:'Cinzel', Georgia, serif;   /* logo kiri: sildid, kolm fookust koos rooma numbritega, autoririda */
   /* kirjaredel: väide 22 · tekst 18 · silt 13 px, telefonis 18 · 15 · 12 px */
   --tekst:1.125rem;  --rida:1.6;
   --lause:1.375rem;
@@ -107,7 +107,7 @@ section{padding-block:var(--vahe)}
   display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
   max-width:54rem; text-align:center;
 }
-.kolm li{font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
+.kolm li{font-family:var(--logo); font-size:var(--tekst); line-height:1.4; text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
