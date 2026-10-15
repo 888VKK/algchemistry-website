@@ -104,17 +104,17 @@ section{padding-block:var(--vahe)}
 /* plokk 3: kolm asja kõrvuti, rooma numbrid kullas */
 .kolm{
   list-style:none; margin:2.5rem auto; padding:0;
-  display:grid; grid-template-columns:repeat(3, 1fr); gap:2.5rem;
-  max-width:58rem; text-align:center;
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:1.5rem;
+  max-width:49rem; text-align:center;
 }
 .kolm li{font-family:var(--logo); font-size:1.125rem; line-height:var(--rida); text-transform:uppercase; text-wrap:balance; padding-inline:.5rem}
 .kolm .ph{text-transform:none}
 .kolm{counter-reset:asi}
 .kolm li{counter-increment:asi}
 .kolm li::before{content:counter(asi, upper-roman); display:block; font-family:var(--logo); font-size:var(--silt); font-weight:400; letter-spacing:.18em; color:var(--kuld); margin-bottom:calc(var(--tekst) * .7); line-height:1}
-/* fookused 18 px; kolm veergu alates 62 rem laiusest */
-@media (max-width:62rem){
-  .kolm{grid-template-columns:1fr; gap:2rem}
+/* fookused 18 px; „The remineralization“ vajab 221 px, veerg on 229 px; kolm veergu alates 56 rem laiusest */
+@media (max-width:56rem){
+  .kolm{grid-template-columns:1fr; gap:1.5rem}
 }
 
 /* plokk 4 ja 5: üks hele pind */
@@ -137,13 +137,13 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
 @media (max-width:34rem){ .kaardid{grid-template-columns:1fr; gap:2.75rem} }
 
 
-/* plokk 6: vapp üksi */
-.vapp{text-align:center; padding-block:calc(var(--vahe) + (.75rem + var(--tekst) * 1.3) / 2 + (var(--silt) - .6875rem) * 1.15 / 2)}
-.vapp img{width:clamp(7rem, 15vw, 9.5rem); height:auto; margin-inline:auto}
-/* telefonis ja tahvlis on alumine vapp 30 % suurem kui vapp kontaktide kaardil (kaardi vapp 113 px, see 147 px) */
-@media (max-width:56rem){ .vapp img{width:9.5rem} }
+/* plokk 6: nimi, vahejoon ja tunnuslause Cinzelis nagu logol; proportsioonid logo järgi (nimi ja tunnuslause 94 % joone laiusest) */
+.vapp{text-align:center; padding-block:var(--vahe)}
+.sonamark{font-family:var(--logo); color:var(--kuld); font-size:1.884rem; line-height:1; letter-spacing:.02em}
+.sonamark-joon{display:block; width:16.15rem; max-width:100%; height:auto; margin:0 auto .28rem}
+.tunnus{font-family:var(--logo); color:var(--kuld); font-size:.728rem; line-height:1; letter-spacing:.16em; text-transform:lowercase}
 .autor{margin-top:2.5rem; letter-spacing:.2em}
-.vapp .autor{margin-top:1rem; color:var(--hele); font-size:.6875rem; text-transform:none}
+.vapp .autor{margin-top:2rem; color:var(--kuld); font-size:.6875rem; text-transform:none}
 </style>
 </head>
 <body>
@@ -180,7 +180,7 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
   <section id="fookus" class="sygav">
     <div class="raam">
       <div class="kesk">
-        <span class="silt">In oral care we focus on three main things that influence each other:</span>
+        <span class="silt">In oral care we focus on three main things<br>that influence each other:</span>
       </div>
       <ul class="kolm">
         <li>The microbiome<br>of your mouth</li>
@@ -216,8 +216,10 @@ a.kaart{display:block; position:relative; overflow:hidden; width:100%; max-width
 
   <section id="vapp" class="sygav vapp">
     <div class="raam">
-      <img src="images/vapp.webp" alt="AlgChemistry coat of arms" width="535" height="646">
-      <p class="silt autor">&copy; 2026 AlgChemistry</p>
+      <p class="sonamark">AlgChemistry</p>
+      <img class="sonamark-joon" src="images/vahejoon.svg" alt="" width="323" height="19">
+      <p class="tunnus">Science for Human Evolution</p>
+      <p class="silt autor">&copy; 2026</p>
     </div>
   </section>
 
